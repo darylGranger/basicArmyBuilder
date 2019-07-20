@@ -12,11 +12,11 @@
 
 <body>
     <div id="app">
-    
+
         <div class="title-bar">
-        <h1>Simple Army Builder</h1>
-    </div>
-        
+            <h1>Simple Army Builder</h1>
+        </div>
+
         <div id="options">
             <h2>Pick your pieces</h2>
             <h3>Casters</h3>
@@ -35,39 +35,17 @@
             <ul>
                 <li v-for="soloOption in soloOptions" @click="pickSolo(soloOption)">{{ soloOption }}</li>
             </ul>
- 
+
         </div>
 
-        <div id="armyList">
-            <h2>Your army</h2>
-            <h3>Caster</h3>
-            <ul>
-                <li>{{ caster }}</li>
-            </ul>
-            <h3>Beasts</h3>
-            <ul>
-                <li v-for="beast in beasts">{{ beast }}</li>
-            </ul>
-            <h3>Units</h3>
-            <ul>
-                <li v-for="unit in units">{{ unit }}</li>
-            </ul>
-            <h3>Solo</h3>
-            <ul>
-                <li>{{ solo }}</li>
-            </ul>
-            <div style="text-align: center">
+        <div id="armyListDiv">
+            <army-list :army="this.army"></army-list>
             <button class="reset-button" @click="resetArmy">Reset</button>
-            </div>
         </div>
 
 
 
     </div>
-
-
-
-
 
 
     <!-- Script tags for js -->

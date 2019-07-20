@@ -41,7 +41,7 @@ h3 {
 
 }
 
-#armyList {
+#armyListDiv {
     background-color: grey;
     width: 35%;
     float: left;
@@ -56,6 +56,6 @@ ul {
 
 .reset-button {
     background-color: lightgrey;
-    display: inline-block;
+    border-radius: 5px;
 
 }
