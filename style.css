@@ -1,0 +1,61 @@
+body {
+    background-color: lightgrey;
+    font-family: 'Poppins', sans-serif;
+}
+
+#app {
+    width: 90%;
+}
+.title-bar {
+    width: 87%;
+    height: 50px;
+    background-color: grey;
+    color:  lightgrey;
+    font-size: 16px;
+    margin: 10px;
+}
+
+h1 {
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+h2  {
+    margin: 10px;
+}
+
+h3 {
+   margin: 5px;
+   position: relative;
+   left: 15px;
+}
+
+#options {
+    background-color: grey;
+    width: 50%;
+    height: 550px;
+    float: left;
+    margin: 10px;
+    color:  lightgray
+
+}
+
+#armyList {
+    background-color: grey;
+    width: 35%;
+    float: left;
+    height: 550px;
+    margin: 10px;
+    color: lightgray;
+}
+
+ul {
+    margin: 5px;
+}
+
+.reset-button {
+    background-color: lightgrey;
+    display: inline-block;
+
+}

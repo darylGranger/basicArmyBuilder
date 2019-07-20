@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Army Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+    
+        <div class="title-bar">
+        <h1>Simple Army Builder</h1>
+    </div>
+        
+        <div id="options">
+            <h2>Pick your pieces</h2>
+            <h3>Casters</h3>
+            <ul>
+                <li v-for="casterOption in casterOptions" @click="pickCaster(casterOption)">{{ casterOption }}</li>
+            </ul>
+            <h3>Beasts</h3>
+            <ul>
+                <li v-for="beastOption in beastOptions" @click="pickBeast(beastOption)">{{ beastOption }}</li>
+            </ul>
+            <h3>Units</h3>
+            <ul>
+                <li v-for="unitOption in unitOptions" @click="pickUnit(unitOption)">{{ unitOption }}</li>
+            </ul>
+            <h3>Solos</h3>
+            <ul>
+                <li v-for="soloOption in soloOptions" @click="pickSolo(soloOption)">{{ soloOption }}</li>
+            </ul>
+ 
+        </div>
+
+        <div id="armyList">
+            <h2>Your army</h2>
+            <h3>Caster</h3>
+            <ul>
+                <li>{{ caster }}</li>
+            </ul>
+            <h3>Beasts</h3>
+            <ul>
+                <li v-for="beast in beasts">{{ beast }}</li>
+            </ul>
+            <h3>Units</h3>
+            <ul>
+                <li v-for="unit in units">{{ unit }}</li>
+            </ul>
+            <h3>Solo</h3>
+            <ul>
+                <li>{{ solo }}</li>
+            </ul>
+            <div style="text-align: center">
+            <button class="reset-button" @click="resetArmy">Reset</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Script tags for js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
